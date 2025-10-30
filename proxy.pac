@@ -5,7 +5,7 @@ function FindProxyForURL(url, host) {
   }
   if (dnsDomainIs(host, "ifconfig.me")) {
     // Google direct
-    return "DIRECT";
+    return "PROXY billbob.ovh:3128";
   }
   // Tout le reste passe par le proxy
   return "DIRECT";
