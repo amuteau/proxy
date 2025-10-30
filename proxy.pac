@@ -3,7 +3,7 @@ function FindProxyForURL(url, host) {
     // Route YouTube via ton proxy Squid
     return "PROXY billbob.ovh:3128";
   }
-  if (dnsDomainIs(host, "ifconfig.me")) {
+  if (dnsDomainIs(host, ".blabla.com")) {
     // Google direct
     return "PROXY billbob.ovh:3128";
   }
