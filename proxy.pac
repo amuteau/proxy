@@ -8,5 +8,5 @@ function FindProxyForURL(url, host) {
     return "DIRECT";
   }
   // Tout le reste passe par le proxy
-  return "PROXY billbob.ovh:3128";
+  return "DIRECT";
 }
