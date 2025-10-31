@@ -4,6 +4,7 @@ function FindProxyForURL(url, host) {
       dnsDomainIs(host, ".youtube-nocookie.com") ||
       dnsDomainIs(host, ".ytimg.com") ||
       dnsDomainIs(host, ".googlevideo.com") ||
+      dnsDomainIs(host, ".ifconfig.me") ||
       host === "youtu.be" ||
       shExpMatch(host, "*.youtube.*")     // couvre sous-domaines et TLD variants
   ) {
