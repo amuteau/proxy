@@ -1,14 +1,9 @@
 function FindProxyForURL(url, host) {
   if (
-      dnsDomainIs(host, ".youtube.com") ||
-      dnsDomainIs(host, ".youtube-nocookie.com") ||
-      dnsDomainIs(host, ".ytimg.com") ||
-      dnsDomainIs(host, ".googlevideo.com") ||
-      dnsDomainIs(host, "ifconfig.me") ||
-      host === "youtu.be" ||
-      shExpMatch(host, "*.youtube.*")     // couvre sous-domaines et TLD variants
+      dnsDomainIs(host, ".exemple.com") ||
+      dnsDomainIs(host, ".freebox.fr")
   ) {
-    return "PROXY billbob.ovh:3128";
+    return "DIRECT";
   // Tout le reste passe par le proxy
-  return "DIRECT";
+  return "PROXY billbob.ovh:3129";
 }
